@@ -94,7 +94,7 @@ footer a:hover{background:#e0453f}
 <section id="s0" class="on">
   <h2>🎧 第 0 站：先聽，再玩</h2>
   <p class="lead">請先收看／收聽節目，再回來挑戰五個關卡。</p>
-  <div class="video" id="yt"><button id="ytb" type="button" aria-label="播放影片">▶<small>點擊載入並播放影片</small></button></div>
+  <div class="video"><iframe src="https://www.youtube.com/embed/NnhQ-K7M0Rs" title="參選台北市長推 SoR" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
   <p style="font-size:14px"><a href="https://www.youtube.com/live/NnhQ-K7M0Rs?si=4qBHx5GVzoEX5yxt" target="_blank" rel="noopener">影片無法播放？在 YouTube 開啟 ↗</a></p>
   <div class="card"><h3>🎙️ Podcast 音檔（約 21 分鐘）</h3><p style="margin:0 0 8px;font-size:15px">想用耳朵先聽一遍？可調整播放速度，邊聽邊做題。</p><audio id="pod" controls preload="metadata" style="width:100%" src="pod.m4a"></audio><div class="row" style="margin-top:8px"><span style="font-size:14px">速度：</span><button class="btn alt" data-rate="0.8" style="padding:4px 14px">0.8×</button><button class="btn alt" data-rate="1" style="padding:4px 14px">1×</button><button class="btn alt" data-rate="1.25" style="padding:4px 14px">1.25×</button><button class="btn alt" data-rate="1.5" style="padding:4px 14px">1.5×</button></div></div>
 <div class="note"><b>中立聲明：</b>本學習單只討論節目中的 <b>SoR（Science of Reading）腦科學與英語教育</b> 概念，不代表對任何政黨或候選人的支持或反對。</div>
@@ -335,7 +335,6 @@ $("saveRef").addEventListener("click",function(){st.ref=$("ref").value;st.ref2=$
 $("finish").addEventListener("click",function(){st.done[5]=true;st.ref=$("ref").value;st.ref2=$("ref2").value;save();for(var i=0;i<5;i++)st.done[i]=true;save();refresh();$("cert").className="card cert";$("cs").textContent=score();$("cert").scrollIntoView({behavior:"smooth",block:"center"});});
 document.addEventListener("click",function(e){var im=e.target.closest(".slide img");var lb=$("lb");if(im){lb.querySelector("img").src=im.src;lb.style.display="flex";}else if(e.target.closest("#lb")){lb.style.display="none";}});
 document.addEventListener("click",function(e){var r=e.target.closest("[data-rate]");if(r){$("pod").playbackRate=parseFloat(r.getAttribute("data-rate"));}});
-$("ytb").addEventListener("click",function(){var h=$("yt");h.innerHTML='<iframe src="https://www.youtube.com/embed/NnhQ-K7M0Rs?autoplay=1" title="參選台北市長推 SoR" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';});
 var bo=$("boot");if(bo)bo.style.display="none";
 refresh();
 })();
