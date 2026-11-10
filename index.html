@@ -85,7 +85,7 @@ footer a:hover{background:#e0453f}
   <h1>當選舉成為一場大腦科學的行為藝術</h1>
   <p>從「4 號助選人」的麻將隱喻，走進 Science of Reading 的大腦地圖</p>
   <div class="progress" style="max-width:420px;margin:14px auto 0"><i id="bar"></i></div>
-  <div style="font-size:14px;margin-top:4px">已完成 <span id="pc">0</span> / 6 關　答對 <span id="score">0</span> 題</div>
+  <div style="font-size:14px;margin-top:4px">已完成 <span id="pc">0</span> / 7 關　答對 <span id="score">0</span> 題</div>
 </header>
 <nav id="nav"></nav>
 <div id="lb"><img alt=""></div>
@@ -94,7 +94,7 @@ footer a:hover{background:#e0453f}
 <!-- 0 -->
 <section id="s0" class="on">
   <h2>🎧 第 0 站：先聽，再玩</h2>
-  <p class="lead">請先收看／收聽節目，再回來挑戰五個關卡。</p>
+  <p class="lead">請先收看／收聽節目，再回來挑戰六個關卡。</p>
   <div class="video"><iframe src="https://www.youtube.com/embed/NnhQ-K7M0Rs" title="參選台北市長推 SoR" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
   <p style="font-size:14px"><a href="https://www.youtube.com/live/NnhQ-K7M0Rs?si=4qBHx5GVzoEX5yxt" target="_blank" rel="noopener">影片無法播放？在 YouTube 開啟 ↗</a></p>
   <div class="card"><h3>🎙️ Podcast 音檔（約 21 分鐘）</h3><p style="margin:0 0 8px;font-size:15px">想用耳朵先聽一遍？可調整播放速度，邊聽邊做題。</p><audio id="pod" controls preload="metadata" style="width:100%" src="pod.m4a"></audio><div class="row" style="margin-top:8px"><span style="font-size:14px">速度：</span><button class="btn alt" data-rate="0.8" style="padding:4px 14px">0.8×</button><button class="btn alt" data-rate="1" style="padding:4px 14px">1×</button><button class="btn alt" data-rate="1.25" style="padding:4px 14px">1.25×</button><button class="btn alt" data-rate="1.5" style="padding:4px 14px">1.5×</button></div></div>
@@ -218,9 +218,73 @@ footer a:hover{background:#e0453f}
     <p style="margin-top:16px">節目最後拋出的問題：學日文、法文時，我們是不是也<b>跳過了聽覺適應階段</b>、直接死記符號？你的看法：</p>
     <textarea id="ref2" placeholder="寫下你的想法……"></textarea>
   </div>
-  <figure class="slide"><img decoding="async" src="img/sl_slogan.jpg" alt="臺灣 SoR 無法黨：讓小孩天天睡飽；讓小孩自信微笑；讓小孩母語超好。" loading="lazy"><figcaption>🔍 點圖放大｜臺灣 SoR 無法黨：讓小孩天天睡飽；讓小孩自信微笑；讓小孩母語超好。</figcaption></figure><div class="card cert hide" id="cert"><h3>🎓 通關！</h3><p>你完成了 6 關，答對 <b id="cs">0</b> 題。<br>記住：學不好，不是你不夠努力，而是順序要先對。</p></div>
+  
+  
+<div class="pager"><button class="btn alt" data-target="4">← 上一關</button><button class="btn" data-target="6">下一關 →</button></div>
+</section>
+
+
+<!-- 6 -->
+<section id="s6">
+  <h2>🎤 第 6 關：SoR 政見發表</h2>
+  <p class="lead">一場把 SoR 當成「禮物」送出去的政見發表。請對照演講內容作答。</p>
+  <figure class="slide"><img decoding="async" src="img/podium.jpg" alt="政見發表現場：講台上的 4 you, 4 me, 4 mosa. 與臺灣 SoR 無法黨標誌" loading="lazy"><figcaption>🔍 點圖放大｜政見發表現場：講台上的「4 you, 4 me, 4 mosa.」與 SoR 無法黨標誌。</figcaption></figure>
+  <div class="note"><b>提醒：</b>本關只整理演講中的 <b>SoR 教育內容與數字</b>，所有數字都是演講者的說法；學習單不代表任何政治立場。</div>
+
+  <div class="card"><h3>Q1　暖身聽力：英文開場</h3>
+    <p>演講一開場，先用英文向「my fellow Taipeians / Taiwanese citizens / FoRmosans」問候，最後一句是：</p>
+    <div class="row"><button class="btn alt" id="sayGreet">🔊 聽這句英文</button><span style="font-size:15px">“…in case I don't see you in the appropriate time zones, good morning, good afternoon, and goodnight.”</span></div>
+    <p style="margin-top:10px">這句幽默的重點是什麼？</p>
+    <div class="opts" data-q="q6a" data-ans="1"><button class="opt">只是在說今天的天氣</button><button class="opt">不論聽眾在哪個時區，都先把問候語一次說完</button><button class="opt">在糾正聽眾的英文文法</button></div><div class="fb"></div>
+  </div>
+
+  <div class="card"><h3>Q2　美國的立法時間線</h3>
+    <p>演講提到：今年八月，美國<b>參議院</b>推出 S. 4689 法案；今年九月，美國<b>眾議院</b>通過 H.R. 7890 法案。眾議院率先通過的法案，名稱簡單粗暴，叫什麼？</p>
+    <div class="opts" data-q="q6b" data-ans="2"><button class="opt">The Bilingual Education Act of 2026</button><button class="opt">The Phonics First Act of 2026</button><button class="opt">The Science of Reading Act of 2026</button></div><div class="fb"></div>
+    <p class="fb-exp" style="font-size:14.5px;color:var(--sub);margin-bottom:0">這也是演講者政黨名稱「臺灣 SoR 無法黨」的由來。</p>
+  </div>
+
+  <div class="card"><h3>Q3　學英文的 6 個步驟（排序）</h3>
+    <p>依序點選，排出美國 SoR 法案的 6 個步驟。</p>
+    <div id="stepPool"></div>
+    <div class="row"><span style="font-size:15px">已排：</span><span id="stepGot" style="font-weight:700"></span><button class="btn alt" id="stepRst" style="padding:4px 14px">重排</button></div>
+    <div class="fb" id="stepfb"></div>
+  </div>
+
+  <div class="card"><h3>Q4　一樓與二樓</h3>
+    <p>演講者說：「學英文不能直接蓋二樓，要先蓋一樓。」依他的說法，臺灣在 6 個步驟中……？</p>
+    <div class="opts" data-q="q6d" data-ans="0"><button class="opt">做對 5 個步驟，但完全跳過第 1 步 PA，直接學第 2 步 Phonics</button><button class="opt">6 個步驟都做對了</button><button class="opt">只做對第 6 步 Writing</button></div><div class="fb"></div>
+  </div>
+
+  <div class="card"><h3>Q5　數字會說話（配對）</h3>
+    <p>點選左邊的數字，再點右邊對應的說明。</p>
+    <div class="row" style="align-items:flex-start"><div id="nL" style="flex:1 1 180px"></div><div id="nR" style="flex:1 1 280px"></div></div>
+    <div class="fb" id="nfb"></div>
+  </div>
+
+  <div class="card"><h3>Q6　SoR 的三句話</h3>
+    <p>演講用 3 句話說明「SoR 是什麼」。下列哪一項<b>不是</b>其中之一？</p>
+    <div class="opts" data-q="q6f" data-ans="3"><button class="opt">SoR 是最快學好英文的大腦科學</button><button class="opt">SoR 是美國直接立法的英文政策</button><button class="opt">SoR 能讓臺北市的雙語遙遙領先全亞洲</button><button class="opt">SoR 是三個月保證班的速成技巧</button></div><div class="fb"></div>
+  </div>
+
+  <div class="card"><h3>Q7　無法黨要做什麼？（可複選）</h3>
+    <div id="multi6"></div><div class="row"><button class="btn" id="mb6">檢查</button></div><div class="fb" id="mfb6"></div>
+  </div>
+
+  <div class="card"><h3>Q8　一輩子的線索：PA</h3>
+    <p>演講者說他推廣 33 年的發明專利，是用<b>改良的 44 個注音</b>去學美語的 44 個發音。他兩年前才知道，這樣的教學邏輯早有名稱，叫做？</p>
+    <div class="opts" data-q="q6h" data-ans="0"><button class="opt">PA（語音覺察）</button><button class="opt">Fluency（流暢度）</button><button class="opt">Comprehension（閱讀理解）</button></div><div class="fb"></div>
+  </div>
+
+  <div class="card"><h3>✍️ 我的反思</h3>
+    <p>演講中，哪一個數字、比喻或句子讓你印象最深？你會怎麼把它講給家人或學生聽？</p>
+    <textarea id="ref3" placeholder="寫下你的想法……"></textarea>
+    <div class="row"><button class="btn" id="saveRef3">儲存</button><span id="ref3st" class="fb"></span></div>
+  </div>
+  <figure class="slide"><img decoding="async" src="img/sl_slogan.jpg" alt="臺灣 SoR 無法黨：讓小孩天天睡飽；讓小孩自信微笑；讓小孩母語超好。" loading="lazy"><figcaption>🔍 點圖放大｜臺灣 SoR 無法黨：讓小孩天天睡飽；讓小孩自信微笑；讓小孩母語超好。</figcaption></figure>
+  <div class="card cert hide" id="cert"><h3>🎓 通關！</h3><p>你完成了 7 關，答對 <b id="cs">0</b> 題。<br>記住：學不好，不是你不夠努力，而是順序要先對。</p></div>
   <div class="card"><h3>📖 延伸閱讀</h3><p style="margin:0"><a href="https://lilinwang0928-cyber.github.io/bridge/" target="_blank" rel="noopener">打破600年的英文Bug：一場結合腦科學與社會實驗的教育革命 ↗</a></p></div>
-<div class="pager"><button class="btn alt" data-target="4">← 上一關</button><button class="btn" id="finish">完成學習單 ✓</button></div>
+  <div class="pager"><button class="btn alt" data-target="5">← 上一關</button><button class="btn" id="finish">完成學習單 ✓</button></div>
 </section>
 
 </main>
@@ -232,7 +296,7 @@ footer a:hover{background:#e0453f}
 
 <script>
 (function(){
-var NAMES=["0 看影片","1 麻將","2 認知超載","3 PA/Phonics","4 國際","5 字典"];
+var NAMES=["0 看影片","1 麻將","2 認知超載","3 PA/Phonics","4 國際","5 字典","6 政見發表"];
 var KEY="sor_election_ws_v1";
 var st={done:{},ans:{},ref:"",ref2:""};
 try{var raw=localStorage.getItem(KEY);if(raw)st=Object.assign(st,JSON.parse(raw));}catch(e){}
@@ -242,7 +306,7 @@ function $(id){return document.getElementById(id);}
 function score(){var n=0;for(var k in st.ans)if(st.ans[k])n++;return n;}
 function refresh(){
   var d=0;for(var k in st.done)if(st.done[k])d++;
-  $("pc").textContent=Math.min(d,6);$("score").textContent=score();$("bar").style.width=(Math.min(d,6)/6*100)+"%";
+  $("pc").textContent=Math.min(d,7);$("score").textContent=score();$("bar").style.width=(Math.min(d,7)/7*100)+"%";
   var bs=$("nav").children;for(var i=0;i<bs.length;i++){bs[i].className=(i===cur?"on ":"")+(st.done[i]?"done":"");}
 }
 function go(n){
@@ -333,9 +397,41 @@ multi("multi2","mb2","mfb3",[["莎士比亞的戲劇",true],["哲學家洛克的
 /* reflections */
 $("ref").value=st.ref||"";$("ref2").value=st.ref2||"";
 $("saveRef").addEventListener("click",function(){st.ref=$("ref").value;st.ref2=$("ref2").value;save();$("refst").className="fb ok";$("refst").textContent="已儲存 ✓";});
-$("finish").addEventListener("click",function(){st.done[5]=true;st.ref=$("ref").value;st.ref2=$("ref2").value;save();for(var i=0;i<5;i++)st.done[i]=true;save();refresh();$("cert").className="card cert";$("cs").textContent=score();$("cert").scrollIntoView({behavior:"smooth",block:"center"});});
+$("finish").addEventListener("click",function(){st.done[6]=true;st.ref=$("ref").value;st.ref2=$("ref2").value;st.ref3=$("ref3").value;save();for(var i=0;i<6;i++)st.done[i]=true;save();refresh();$("cert").className="card cert";$("cs").textContent=score();$("cert").scrollIntoView({behavior:"smooth",block:"center"});});
 document.addEventListener("click",function(e){var im=e.target.closest(".slide img");var lb=$("lb");if(im){lb.querySelector("img").src=im.src;lb.style.display="flex";}else if(e.target.closest("#lb")){lb.style.display="none";}});
 document.addEventListener("click",function(e){var r=e.target.closest("[data-rate]");if(r){$("pod").playbackRate=parseFloat(r.getAttribute("data-rate"));}});
+
+EXP.q6a="對！不管聽眾在哪個時區，都先把早安、午安、晚安一次說完。";
+EXP.q6b="The Science of Reading Act of 2026，也是政黨名稱的由來。";
+EXP.q6d="依演講者的說法：5 個步驟做對，但跳過了第 1 步 PA（一樓）。";
+EXP.q6f="演講強調的是大腦科學、美國立法與雙語領先；SoR 不是速成補習班。";
+EXP.q6h="PA（語音覺察）：用注音的 44 個音，對應美語的 44 個發音。";
+$("sayGreet").addEventListener("click",function(){say("in case I don't see you in the appropriate time zones, good morning, good afternoon, and goodnight.",0.85);});
+(function(){
+  var STEPS=["PA","Phonics","Fluency","Vocabulary and grammar","Comprehension","Writing"],next=0;
+  var order=[3,0,5,2,4,1];
+  order.forEach(function(i){var c=document.createElement("span");c.className="chip";c.textContent=STEPS[i];c.setAttribute("data-i",i);$("stepPool").appendChild(c);});
+  $("stepPool").addEventListener("click",function(e){var c=e.target.closest(".chip");if(!c||c.classList.contains("good"))return;
+    if(parseInt(c.getAttribute("data-i"),10)===next){c.classList.add("good");next++;$("stepGot").textContent=STEPS.slice(0,next).join(" → ");
+      if(next===6){$("stepfb").className="fb ok";$("stepfb").textContent="✅ 完整的 6 步驟：PA → Phonics → Fluency → Vocabulary and grammar → Comprehension → Writing";st.ans.q6c=1;save();refresh();}
+      else{$("stepfb").className="fb ok";$("stepfb").textContent="✅ 下一步是什麼？";}}
+    else{$("stepfb").className="fb no";$("stepfb").textContent="順序不對：想想看，先聽（聲音）、再看（符號）、再流暢……";if(!("q6c" in st.ans)){st.ans.q6c=0;save();}}});
+  $("stepRst").addEventListener("click",function(){next=0;$("stepGot").textContent="";$("stepfb").textContent="";[].forEach.call($("stepPool").children,function(c){c.classList.remove("good");});});
+})();
+(function(){
+  var PR=[["125 億","已花光的雙語預算"],["1000 間以上","自稱雙語國小的學校數"],["10000 個以上","每年學了近 10 年英文，英文作文卻是零分的高三考生"],["120 萬名","正在學自然發音法的小學生"],["3600 多人","他親自培訓的 SoR 師資"],["7 項＋2 項","SoR 臺灣專利＋國際專利（免費授權市政府）"]];
+  var L=$("nL"),R=$("nR"),selL=null,done={},order=[4,1,5,0,3,2];
+  PR.forEach(function(p,i){var c=document.createElement("span");c.className="chip";c.style.display="block";c.textContent=p[0];c.setAttribute("data-i",i);L.appendChild(c);});
+  order.forEach(function(i){var c=document.createElement("span");c.className="chip";c.style.display="block";c.textContent=PR[i][1];c.setAttribute("data-i",i);R.appendChild(c);});
+  L.addEventListener("click",function(e){var c=e.target.closest(".chip");if(!c||c.classList.contains("good"))return;[].forEach.call(L.children,function(x){x.classList.remove("sel");});c.classList.add("sel");selL=c;});
+  R.addEventListener("click",function(e){var c=e.target.closest(".chip");if(!c||!selL||c.classList.contains("good"))return;
+    if(c.getAttribute("data-i")===selL.getAttribute("data-i")){c.className="chip good";selL.className="chip good";done[c.getAttribute("data-i")]=1;selL=null;
+      if(Object.keys(done).length===6){$("nfb").className="fb ok";$("nfb").textContent="✅ 全部配對成功！（以上皆為演講中的說法）";st.ans.q6e=1;save();refresh();}}
+    else{$("nfb").className="fb no";$("nfb").textContent="不太對，再試一次。";if(!("q6e" in st.ans)){st.ans.q6e=0;save();}}});
+})();
+multi("multi6","mb6","mfb6",[["先把 SoR 帶進地方政府",true],["再把 SoR 帶進中央政府",true],["任務完成後，就地解散",true],["永遠留在政壇、擴大黨務",false]],"q6g","✅ 先地方、再中央、任務完成後就地解散！");
+$("ref3").value=st.ref3||"";
+$("saveRef3").addEventListener("click",function(){st.ref3=$("ref3").value;save();$("ref3st").className="fb ok";$("ref3st").textContent="已儲存 ✓";});
 var bo=$("boot");if(bo)bo.style.display="none";
 refresh();
 })();
