@@ -117,7 +117,10 @@ input[type=text],textarea{background:#fffdf9;border-radius:12px}input:focus,text
 .cert{background:linear-gradient(135deg,#fffdf5,#fff3d6);box-shadow:0 6px 24px #b08a3e33}
 details.card summary{color:var(--navy)}
 .gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr));gap:14px;margin:16px 0}
-.gallery.one{grid-template-columns:minmax(0,520px);justify-content:center}
+.gallery.one{grid-template-columns:minmax(0,840px);justify-content:center}
+.gallery.one figure{padding:12px 12px 8px}
+.gallery.one img{max-height:82vh;object-fit:contain;background:#fff}
+.gallery.one figcaption{font-size:14.5px}
 .gallery figure{margin:0;background:#fff;border:1px solid #eadfcc;border-radius:14px;padding:8px 8px 6px;box-shadow:var(--shadow);transition:.15s}
 .gallery figure:hover{transform:translateY(-2px);box-shadow:0 8px 22px #3b2a1e22}
 .gallery img{width:100%;height:auto;border:0;border-radius:8px;display:block}
