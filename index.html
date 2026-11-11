@@ -127,6 +127,15 @@ details.card summary{color:var(--navy)}
 .gallery figcaption{font-size:13.5px;line-height:1.5;padding:6px 4px 2px;color:var(--sub)}
 footer{background:linear-gradient(135deg,#251a13,#3b2a1e)}
 @media(max-width:560px){body{font-size:16.5px}.card{padding:16px 15px;border-radius:16px}header{padding:30px 16px 24px}main{padding-left:12px;padding-right:12px}.gallery{grid-template-columns:1fr}.opt{padding:12px 14px}}
+
+.hbtn{background:#ffffff1f;border:1px solid #ffffff66;color:#fff;border-radius:99px;padding:2px 12px;font:inherit;font-size:13px;cursor:pointer;margin-left:10px}.hbtn:hover{background:#ffffff38}
+.lk{color:var(--red);text-decoration:underline;cursor:pointer}
+#recTable{width:100%;border-collapse:collapse;font-size:15px;min-width:560px}
+#recTable th,#recTable td{padding:7px 8px;border-bottom:1px solid var(--line);text-align:left;white-space:nowrap}
+#recTable td.tt{white-space:normal;min-width:160px}
+#recTable th{color:var(--navy);background:#faf3e3;position:sticky;top:0}
+.rbar{display:flex;align-items:center;gap:10px;margin:7px 0;font-size:15px}.rbar span.n{flex:0 0 118px}.rbar .tr{flex:1;height:12px;background:#eadfcc;border-radius:99px;overflow:hidden}.rbar .tr i{display:block;height:100%;background:linear-gradient(90deg,var(--gold),var(--ok))}.rbar span.v{flex:0 0 70px;text-align:right;color:var(--sub)}
+.lgrow{padding:5px 0;border-bottom:1px dashed var(--line);font-size:15px}
 </style>
 </head>
 <body>
@@ -136,7 +145,7 @@ footer{background:linear-gradient(135deg,#251a13,#3b2a1e)}
   <h1>當選舉成為一場大腦科學的行為藝術</h1>
   <p>從「4 號助選人」的麻將隱喻，走進 Science of Reading 的大腦地圖</p>
   <div class="progress" style="max-width:420px;margin:14px auto 0"><i id="bar"></i></div>
-  <div style="font-size:14px;margin-top:4px">已完成 <span id="pc">0</span> / 7 關　答對 <span id="score">0</span> 題</div>
+  <div style="font-size:14px;margin-top:4px">已完成 <span id="pc">0</span> / 7 關　答對 <span id="score">0</span> / <span id="tot">40</span> 題<button class="hbtn" data-target="7" type="button">📊 答題記錄</button></div>
 </header>
 <nav id="nav"></nav>
 <div id="lb"><img alt=""></div>
@@ -182,6 +191,14 @@ footer{background:linear-gradient(135deg,#251a13,#3b2a1e)}
     <p>蕭博士在政見中表示，願意把自己的幾項專利無條件免費授權給任何願意推動的縣市？</p>
     <div class="opts" data-q="q1c" data-ans="2"><button class="opt">3 項</button><button class="opt">5 項</button><button class="opt">7 項</button></div><div class="fb"></div>
   </div>
+  <div class="card"><h3>Q4　麻將裡的關鍵卡張</h3>
+    <p>節目說，在這場麻將隱喻裡，蕭博士把自己定位成什麼？</p>
+    <div class="opts" data-q="q1d" data-ans="1"><button class="opt">最後胡牌的莊家</button><button class="opt">能讓整副牌「聽牌」的關鍵卡張</button><button class="opt">在旁邊看牌的觀眾</button></div><div class="fb"></div>
+  </div>
+  <div class="card"><h3>Q5　「當」市長，還是「幫」市長？</h3>
+    <p>演講中他說，自己參選不是要「當」臺北市長，而是要……？</p>
+    <div class="opts" data-q="q1e" data-ans="2"><button class="opt">「罷」臺北市長</button><button class="opt">「換」臺北市長</button><button class="opt">「幫」臺北市長</button></div><div class="fb"></div>
+  </div>
   <div class="pager"><button class="btn alt" data-target="0">← 上一站</button><button class="btn" data-target="2">下一關 →</button></div>
 </section>
 
@@ -199,6 +216,14 @@ footer{background:linear-gradient(135deg,#251a13,#3b2a1e)}
   <div class="card"><h3>Q3　名詞解釋</h3>
     <p>「<b>認知超載（Cognitive Overload）</b>」最接近下列哪一種情況？</p>
     <div class="opts" data-q="q2b" data-ans="0"><button class="opt">同時處理的新資訊超過大腦負荷，結果兩邊都學不好</button><button class="opt">學得太快，所以覺得無聊</button><button class="opt">只靠聽就學會所有內容</button></div><div class="fb"></div>
+  </div>
+  <div class="card"><h3>Q4　現行常見的做法</h3>
+    <p>依節目所述，臺灣常見的「雙語教學」，是用英文去教哪些科目？</p>
+    <div class="opts" data-q="q2c" data-ans="0"><button class="opt">音樂、體育、美勞</button><button class="opt">數學、自然、社會</button><button class="opt">國文、歷史、地理</button></div><div class="fb"></div>
+  </div>
+  <div class="card"><h3>Q5　認知超載的結果</h3>
+    <p>節目說，大腦還沒建立英文語音迴路，就被要求用英文學體育與音樂，結果會是？</p>
+    <div class="opts" data-q="q2d" data-ans="2"><button class="opt">英文自動學會，其他科目也進步</button><button class="opt">只有體育變得更好</button><button class="opt">兩邊都沒學好，對三門學科都產生挫折</button></div><div class="fb"></div>
   </div>
   <div class="pager"><button class="btn alt" data-target="1">← 上一關</button><button class="btn" data-target="3">下一關 →</button></div>
 </section>
@@ -227,6 +252,18 @@ footer{background:linear-gradient(135deg,#251a13,#3b2a1e)}
     <p>「沒聽過鋼琴音色，就被逼著看五線譜對應琴鍵」，比喻的是哪個狀況？</p>
     <div class="opts" data-q="q3d" data-ans="1"><button class="opt">跳過 Phonics 直接學閱讀理解</button><button class="opt">跳過 PA，直接進入 Phonics</button><button class="opt">只做 PA，不做 Phonics</button></div><div class="fb"></div>
   </div>
+  <div class="card"><h3>Q5　閉眼就能做的階段</h3>
+    <p>哪一個階段「完全不需要看到任何英文字母」，閉著眼睛就能做？</p>
+    <div class="opts" data-q="q3e" data-ans="1"><button class="opt">Phonics（自然發音）</button><button class="opt">PA（語音覺察）</button><button class="opt">Comprehension（閱讀理解）</button></div><div class="fb"></div>
+  </div>
+  <div class="card"><h3>Q6　死背的後果</h3>
+    <p>跳過 PA、直接死背字母與發音時，大腦沒有「聲音的掛鉤」，會把每個單字當成什麼來記？</p>
+    <div class="opts" data-q="q3f" data-ans="2"><button class="opt">一首熟悉的歌</button><button class="opt">一段有規則的程式</button><button class="opt">一張「無意義的圖畫」</button></div><div class="fb"></div>
+  </div>
+  <div class="card"><h3>Q7　第 3 步是什麼</h3>
+    <p>SoR 的 6 個步驟依序是 PA、Phonics、？、Vocabulary and grammar、Comprehension、Writing。第 3 步是？</p>
+    <div class="opts" data-q="q3g" data-ans="2"><button class="opt">Writing</button><button class="opt">Comprehension</button><button class="opt">Fluency</button></div><div class="fb"></div>
+  </div>
   <div class="pager"><button class="btn alt" data-target="2">← 上一關</button><button class="btn" data-target="4">下一關 →</button></div>
 </section>
 
@@ -241,6 +278,18 @@ footer{background:linear-gradient(135deg,#251a13,#3b2a1e)}
   <div class="card"><h3>Q2　SoR 能用在外語學習者嗎？</h3>
     <p>節目指出美國參議院法案寫明：SoR 也適用於把英文當外語的移民孩子。主要理由是？</p>
     <div class="opts" data-q="q4b" data-ans="2"><button class="opt">因為台灣學生比較聰明</button><button class="opt">因為考試只考筆試</button><button class="opt">因為人類大腦處理語言的底層神經路徑是共通的</button></div><div class="fb"></div>
+  </div>
+  <div class="card"><h3>Q3　哪五個國家</h3>
+    <p>節目提到，哪五個國家的現行語文教育政策是基於 SoR？</p>
+    <div class="opts" data-q="q4c" data-ans="1"><button class="opt">美國、日本、韓國、德國、義大利</button><button class="opt">美國、加拿大、英國、澳洲、法國</button><button class="opt">只有美國一個國家</button></div><div class="fb"></div>
+  </div>
+  <div class="card"><h3>Q4　幾州立法</h3>
+    <p>節目與演講都提到，美國有多少個州為 SoR 正式立法？</p>
+    <div class="opts" data-q="q4d" data-ans="1"><button class="opt">14 個</button><button class="opt">44 個</button><button class="opt">50 個</button></div><div class="fb"></div>
+  </div>
+  <div class="card"><h3>Q5　診斷矩陣的「SoR 正解」</h3>
+    <p>簡報「雙語政策診斷矩陣」裡，SoR 正解是什麼？</p>
+    <div class="opts" data-q="q4e" data-ans="2"><button class="opt">增加外師人數與英文授課科目</button><button class="opt">把所有課程改成全英文</button><button class="opt">階段 1 扎實建立 PA，階段 2 才進入 Phonics</button></div><div class="fb"></div>
   </div>
   <div class="pager"><button class="btn alt" data-target="3">← 上一關</button><button class="btn" data-target="5">下一關 →</button></div>
 </section>
@@ -262,6 +311,14 @@ footer{background:linear-gradient(135deg,#251a13,#3b2a1e)}
   </div>
   <div class="card"><h3>Q3　Johnson 引用了哪些來源？（可複選）</h3>
     <div id="multi2"></div><div class="row"><button class="btn" id="mb2">檢查</button></div><div class="fb" id="mfb3"></div>
+  </div>
+  <div class="card"><h3>Q4　兩尊公仔</h3>
+    <p>照片中，Andy Go（安迪哥）與 Muffin Man（麻煩人）分別指著字典裡的哪個字？</p>
+    <div class="opts" data-q="q5d" data-ans="0"><button class="opt">Go 與 Vote</button><button class="opt">Vote 與 Go</button><button class="opt">Book 與 Page</button></div><div class="fb"></div>
+  </div>
+  <div class="card"><h3>Q5　自動化之後</h3>
+    <p>PA 與 Phonics 自動化後，釋放出來的大腦資源能進入哪些後面的階段？</p>
+    <div class="opts" data-q="q5e" data-ans="2"><button class="opt">重新回到第 1 步</button><button class="opt">只剩下背字母表</button><button class="opt">流暢度、詞彙量擴充，以及閱讀理解</button></div><div class="fb"></div>
   </div>
   <div class="card"><h3>✍️ 我的反思</h3>
     <p>如果你過去學英文曾經很挫折，請對照節目，寫下你覺得「是哪一個階段沒打好」？你想怎麼補？（自動儲存在本機）</p>
@@ -330,15 +387,40 @@ footer{background:linear-gradient(135deg,#251a13,#3b2a1e)}
     <div class="opts" data-q="q6h" data-ans="0"><button class="opt">PA（語音覺察）</button><button class="opt">Fluency（流暢度）</button><button class="opt">Comprehension（閱讀理解）</button></div><div class="fb"></div>
   </div>
 
+  <div class="card"><h3>Q9　SoR 法案的第二個重點</h3>
+    <p>演講說美國 SoR 法案有兩大重點，第一是學英文有 6 個步驟，第二個重點是？</p>
+    <div class="opts" data-q="q6i" data-ans="1"><button class="opt">只適用英文母語的小孩</button><button class="opt">6 個步驟適用任何有大腦的小孩，包含 ESL 移民孩子</button><button class="opt">只適用於臺北市的學生</button></div><div class="fb"></div>
+  </div>
+  <div class="card"><h3>Q10　美國為什麼痛定思痛</h3>
+    <p>演講說，美國人為什麼痛定思痛、找到 SoR 這個答案？</p>
+    <div class="opts" data-q="q6j" data-ans="2"><button class="opt">因為英文考試太簡單</button><button class="opt">因為外師的人數不夠</button><button class="opt">因為發現太多孩子是功能性文盲，連母語都學不好</button></div><div class="fb"></div>
+  </div>
   <div class="card"><h3>✍️ 我的反思</h3>
     <p>演講中，哪一個數字、比喻或句子讓你印象最深？你會怎麼把它講給家人或學生聽？</p>
     <textarea id="ref3" placeholder="寫下你的想法……"></textarea>
     <div class="row"><button class="btn" id="saveRef3">儲存</button><span id="ref3st" class="fb"></span></div>
   </div>
   <figure class="slide"><img decoding="async" src="img/sl_slogan.jpg" alt="臺灣 SoR 無法黨：讓小孩天天睡飽；讓小孩自信微笑；讓小孩母語超好。" loading="lazy"><figcaption>🔍 點圖放大｜臺灣 SoR 無法黨：讓小孩天天睡飽；讓小孩自信微笑；讓小孩母語超好。</figcaption></figure>
-  <div class="card cert hide" id="cert"><h3>🎓 通關！</h3><p>你完成了 7 關，答對 <b id="cs">0</b> 題。<br>記住：學不好，不是你不夠努力，而是順序要先對。</p></div>
+  <div class="card cert hide" id="cert"><h3>🎓 通關！</h3><p>你完成了 7 關，答對 <b id="cs">0</b> / 40 題（<span class="lk" data-target="7" role="button" tabindex="0">查看答題記錄</span>）。<br>記住：學不好，不是你不夠努力，而是順序要先對。</p></div>
   <div class="card"><h3>📖 延伸閱讀</h3><p style="margin:0"><a href="https://lilinwang0928-cyber.github.io/bridge/" target="_blank" rel="noopener">打破600年的英文Bug：一場結合腦科學與社會實驗的教育革命 ↗</a></p></div>
   <div class="pager"><button class="btn alt" data-target="5">← 上一關</button><button class="btn" id="finish">完成學習單 ✓</button></div>
+</section>
+
+
+<!-- 7 -->
+<section id="s7">
+  <h2>📊 答題記錄</h2>
+  <p class="lead">記錄每一題的作答：首答是否正確、作答次數與時間。資料只存在這台裝置的瀏覽器裡。</p>
+  <div class="card"><h3>學習者</h3><input type="text" id="who" placeholder="輸入姓名或座號（選填，會寫進匯出的記錄）"></div>
+  <div class="stat" id="recStat"></div>
+  <div class="card"><h3>各關進度</h3><div id="recStations"></div></div>
+  <div class="card"><h3>逐題記錄</h3><div style="overflow-x:auto"><table id="recTable"></table></div></div>
+  <div class="card"><h3>最近作答（最新在上）</h3><div id="recLog"></div></div>
+  <div class="card"><h3>匯出與清除</h3>
+    <div class="row"><button class="btn" id="recCopy" type="button">📋 複製記錄</button><button class="btn alt" id="recCsv" type="button">⬇️ 下載 CSV</button><button class="btn alt" id="recClr" type="button">🗑️ 清除答題記錄</button></div>
+    <div class="fb" id="recMsg"></div>
+  </div>
+  <div class="pager"><button class="btn alt" data-target="6">← 回第 6 關</button><span></span></div>
 </section>
 
 </main>
@@ -350,17 +432,17 @@ footer{background:linear-gradient(135deg,#251a13,#3b2a1e)}
 
 <script>
 (function(){
-var NAMES=["0 看影片","1 麻將","2 認知超載","3 PA/Phonics","4 國際","5 字典","6 政見發表"];
+var NAMES=["0 看影片","1 麻將","2 認知超載","3 PA/Phonics","4 國際","5 字典","6 政見發表","📊 答題記錄"];
 var KEY="sor_election_ws_v1";
-var st={done:{},ans:{},ref:"",ref2:""};
+var st={done:{},ans:{},ref:"",ref2:"",rec:{},log:[],name:""};
 try{var raw=localStorage.getItem(KEY);if(raw)st=Object.assign(st,JSON.parse(raw));}catch(e){}
 function save(){try{localStorage.setItem(KEY,JSON.stringify(st));}catch(e){}}
 var cur=0;
 function $(id){return document.getElementById(id);}
-function score(){var n=0;for(var k in st.ans)if(st.ans[k])n++;return n;}
+function score(){var n=0;QORDER.forEach(function(k){if(st.ans[k]===1)n++;});return n;}
 function refresh(){
   var d=0;for(var k in st.done)if(st.done[k])d++;
-  $("pc").textContent=Math.min(d,7);$("score").textContent=score();$("bar").style.width=(Math.min(d,7)/7*100)+"%";
+  $("pc").textContent=Math.min(d,7);$("score").textContent=score();if(cur===7)renderRec();$("bar").style.width=(Math.min(d,7)/7*100)+"%";
   var bs=$("nav").children;for(var i=0;i<bs.length;i++){bs[i].className=(i===cur?"on ":"")+(st.done[i]?"done":"");}
 }
 function go(n){
@@ -370,7 +452,7 @@ function go(n){
 }
 NAMES.forEach(function(t,i){var b=document.createElement("button");b.textContent=t;b.setAttribute("data-target",i);$("nav").appendChild(b);});
 document.addEventListener("click",function(e){
-  var t=e.target.closest("[data-target]");if(t){var n=parseInt(t.getAttribute("data-target"),10);if(!isNaN(n)){if(n>cur)st.done[cur]=true;save();go(n);}}
+  var t=e.target.closest("[data-target]");if(t){var n=parseInt(t.getAttribute("data-target"),10);if(!isNaN(n)){if(n>cur&&n<=6)st.done[cur]=true;save();go(n);}}
 });
 /* generic single choice */
 var EXP={
@@ -388,8 +470,8 @@ document.querySelectorAll(".opts[data-q]").forEach(function(box){
   var bs=box.querySelectorAll(".opt");
   function lock(){bs.forEach(function(b){b.disabled=true;});}
   bs.forEach(function(b,i){b.addEventListener("click",function(){
-    if(i===ans){b.className="opt right";fb.className="fb ok";fb.textContent="✅ "+(EXP[q]||"答對了！");if(!(q in st.ans))st.ans[q]=1;lock();save();refresh();}
-    else{b.className="opt wrong";fb.className="fb no";fb.textContent="再想想，換一個選項試試。";if(!(q in st.ans))st.ans[q]=0;save();}
+    if(i===ans){b.className="opt right";fb.className="fb ok";fb.textContent="✅ "+(EXP[q]||"答對了！");rec(q,true);lock();}
+    else{b.className="opt wrong";fb.className="fb no";fb.textContent="再想想，換一個選項試試。";rec(q,false);}
   });});
 });
 /* matching */
@@ -403,21 +485,21 @@ var selL=null,matched={};
   L.addEventListener("click",function(e){var c=e.target.closest(".chip");if(!c||c.classList.contains("good"))return;[].forEach.call(L.children,function(x){x.classList.remove("sel");});c.classList.add("sel");selL=c;});
   R.addEventListener("click",function(e){var c=e.target.closest(".chip");if(!c||!selL||c.classList.contains("good"))return;
     if(c.getAttribute("data-i")===selL.getAttribute("data-i")){c.className="chip good";selL.className="chip good";matched[c.getAttribute("data-i")]=1;selL=null;
-      if(Object.keys(matched).length===4){$("mfb").className="fb ok";$("mfb").textContent="✅ 全部配對成功！";st.ans.q1a=1;save();refresh();}}
-    else{$("mfb").className="fb no";$("mfb").textContent="不太對，再試一次。";if(!("q1a" in st.ans)){st.ans.q1a=0;save();}}
+      if(Object.keys(matched).length===4){$("mfb").className="fb ok";$("mfb").textContent="✅ 全部配對成功！";rec("q1a",true);}}
+    else{$("mfb").className="fb no";$("mfb").textContent="不太對，再試一次。";rec("q1a",false);}
   });
 })();
 /* fill-ins */
-$("f26b").addEventListener("click",function(){var ok=$("f26").value.trim()==="26";$("f26fb").className="fb "+(ok?"ok":"no");$("f26fb").textContent=ok?"✅ 26 年！":"提示：節目說「整整……年」，是二十幾年。";if(ok){st.ans.q1b=1;save();refresh();}});
+$("f26b").addEventListener("click",function(){var ok=$("f26").value.trim()==="26";$("f26fb").className="fb "+(ok?"ok":"no");$("f26fb").textContent=ok?"✅ 26 年！":"提示：節目說「整整……年」，是二十幾年。";rec("q1b",ok);});
 $("fb5").addEventListener("click",function(){var a=$("f114").value.replace(/[,，\s]/g,"")==="114000",b=$("f68").value.trim()==="68";
   $("f5fb").className="fb "+(a&&b?"ok":"no");$("f5fb").textContent=a&&b?"✅ 114,000 條、68 種用法！":(a?"114,000 對了，go 的用法數再看一次節目。":(b?"68 對了，典故數再想想（十一萬多）。":"再聽一次節目裡的數字。"));
-  if(a&&b){st.ans.q5a=1;save();refresh();}});
+  rec("q5a",!!(a&&b));});
 /* true/false */
 var TF=[["用英文教體育和音樂，就是大腦科學所支持的最佳沉浸。",false,"蕭博士主張：在沒有英文語音基礎時，這會造成認知超載。"],["美國花了 26 年，才把以大腦科學為基礎的作法逐步推向立法。",true,"節目中的說法是整整 26 年。"],["PA 需要看到英文字母才能進行。",false,"PA 純粹是聲音的處理，閉著眼睛就能做。"]];
 TF.forEach(function(t,i){var d=document.createElement("div");d.style.margin="10px 0";
   d.innerHTML='<div>'+(i+1)+'. '+t[0]+'</div><div class="row" style="margin-top:4px"><button class="btn alt">⭕ 正確</button><button class="btn alt">❌ 錯誤</button><span class="fb"></span></div>';
   var bs=d.querySelectorAll("button"),fb=d.querySelector(".fb");
-  [true,false].forEach(function(v,j){bs[j].addEventListener("click",function(){var ok=(v===t[1]);fb.className="fb "+(ok?"ok":"no");fb.textContent=(ok?"✅ ":"❌ ")+t[2];if(!("tf"+i in st.ans)){st.ans["tf"+i]=ok?1:0;save();refresh();}});});
+  [true,false].forEach(function(v,j){bs[j].addEventListener("click",function(){var ok=(v===t[1]);fb.className="fb "+(ok?"ok":"no");fb.textContent=(ok?"✅ ":"❌ ")+t[2];rec("tf"+i,ok);});});
   $("tf").appendChild(d);});
 /* TTS */
 function say(txt,rate){try{var u=new SpeechSynthesisUtterance(txt);u.lang="en-US";u.rate=rate||0.8;var vs=speechSynthesis.getVoices();for(var i=0;i<vs.length;i++){if(vs[i].name.indexOf("Google US English")>=0){u.voice=vs[i];break;}}speechSynthesis.cancel();speechSynthesis.speak(u);}catch(e){}}
@@ -428,8 +510,8 @@ var removed=false;
 function drawCat(){var h="";[["/k/","k"],["/æ/","ae"],["/t/","t"]].forEach(function(p,i){h+='<span class="tile'+(removed&&i===0?" gone":"")+'" data-i="'+i+'">'+p[0]+'</span>';});$("catTiles").innerHTML=h;}
 drawCat();
 $("catTiles").addEventListener("click",function(e){var t=e.target.closest(".tile");if(!t)return;
-  if(t.getAttribute("data-i")==="0"){removed=true;drawCat();$("catfb").className="fb ok";$("catfb").textContent="✅ 拿掉 /k/，剩下 /æt/（at）——全程不需要任何字母！";st.ans.q3a=1;save();refresh();say("at",0.6);}
-  else{$("catfb").className="fb no";$("catfb").textContent="這題要拿掉的是第一個聲音 /k/。";}});
+  if(t.getAttribute("data-i")==="0"){removed=true;drawCat();$("catfb").className="fb ok";$("catfb").textContent="✅ 拿掉 /k/，剩下 /æt/（at）——全程不需要任何字母！";rec("q3a",true);say("at",0.6);}
+  else{$("catfb").className="fb no";$("catfb").textContent="這題要拿掉的是第一個聲音 /k/。";rec("q3a",false);}});
 $("rstCat").addEventListener("click",function(){removed=false;drawCat();$("catfb").textContent="";});
 /* sort */
 var CARDS=[["閉著眼睛，把 cat 拆成三個聲音","PA"],["把 /k/ 從 cat 拿掉，剩 /æt/","PA"],["純聽覺辨識、重組聲音單位","PA"],["看著 c-a-t，把字母跟聲音綁定","PH"],["睜開眼睛，對照紙上的視覺符號","PH"],["字母與發音的對應規則","PH"]];
@@ -438,13 +520,13 @@ CARDS.forEach(function(c,i){var s=document.createElement("span");s.className="ch
 $("pool").addEventListener("click",function(e){var c=e.target.closest(".chip");if(!c)return;[].forEach.call($("pool").children,function(x){x.classList.remove("sel");});c.classList.add("sel");picked=c;});
 function drop(binId,key){$(binId).addEventListener("click",function(){if(!picked)return;var i=parseInt(picked.getAttribute("data-i"),10);
   if(CARDS[i][1]===key){picked.className="chip good";$(binId).appendChild(picked);picked=null;placed++;$("sfb").className="fb ok";$("sfb").textContent="✅ 放對了！";
-    if(placed===CARDS.length){$("sfb").textContent="✅ 全部歸類正確：PA 純聽覺、Phonics 要看符號！";st.ans.q3b=1;save();refresh();}}
-  else{$("sfb").className="fb no";$("sfb").textContent="放錯籃子了：想想看，這件事需要看到字母嗎？";if(!("q3b" in st.ans)){st.ans.q3b=0;save();}}});}
+    if(placed===CARDS.length){$("sfb").textContent="✅ 全部歸類正確：PA 純聽覺、Phonics 要看符號！";rec("q3b",true);}}
+  else{$("sfb").className="fb no";$("sfb").textContent="放錯籃子了：想想看，這件事需要看到字母嗎？";rec("q3b",false);}});}
 drop("binPA","PA");drop("binPH","PH");
 /* multi selects */
 function multi(boxId,btnId,fbId,items,qkey,okMsg){
   var sel={};items.forEach(function(it,i){var c=document.createElement("span");c.className="chip";c.textContent=it[0];c.addEventListener("click",function(){sel[i]=!sel[i];c.classList.toggle("sel",!!sel[i]);});$(boxId).appendChild(c);});
-  $(btnId).addEventListener("click",function(){var ok=items.every(function(it,i){return !!sel[i]===it[1];});$(fbId).className="fb "+(ok?"ok":"no");$(fbId).textContent=ok?okMsg:"還有選漏或選錯的，再檢查一次。";if(ok){st.ans[qkey]=1;save();refresh();}});
+  $(btnId).addEventListener("click",function(){var ok=items.every(function(it,i){return !!sel[i]===it[1];});$(fbId).className="fb "+(ok?"ok":"no");$(fbId).textContent=ok?okMsg:"還有選漏或選錯的，再檢查一次。";rec(qkey,ok);});
 }
 multi("multi","mb","mfb2",[["考試偏重讀寫、少考純聽覺拆解",true],["師資培育斷層：老師自己也是跳過 PA 學上來的",true],["因為腦科學在台灣已被證實無效",false],["牽涉整個補教與教學生態系的轉型",true]],"q4a","✅ 這是一個生態系的問題！");
 multi("multi2","mb2","mfb3",[["莎士比亞的戲劇",true],["哲學家洛克的論述",true],["馬太福音經文",true],["最新的手機廣告",false]],"q5c","✅ 莎士比亞、洛克、馬太福音都在其中！");
@@ -467,9 +549,9 @@ $("sayGreet").addEventListener("click",function(){say("in case I don't see you i
   order.forEach(function(i){var c=document.createElement("span");c.className="chip";c.textContent=STEPS[i];c.setAttribute("data-i",i);$("stepPool").appendChild(c);});
   $("stepPool").addEventListener("click",function(e){var c=e.target.closest(".chip");if(!c||c.classList.contains("good"))return;
     if(parseInt(c.getAttribute("data-i"),10)===next){c.classList.add("good");next++;$("stepGot").textContent=STEPS.slice(0,next).join(" → ");
-      if(next===6){$("stepfb").className="fb ok";$("stepfb").textContent="✅ 完整的 6 步驟：PA → Phonics → Fluency → Vocabulary and grammar → Comprehension → Writing";st.ans.q6c=1;save();refresh();}
+      if(next===6){$("stepfb").className="fb ok";$("stepfb").textContent="✅ 完整的 6 步驟：PA → Phonics → Fluency → Vocabulary and grammar → Comprehension → Writing";rec("q6c",true);}
       else{$("stepfb").className="fb ok";$("stepfb").textContent="✅ 下一步是什麼？";}}
-    else{$("stepfb").className="fb no";$("stepfb").textContent="順序不對：想想看，先聽（聲音）、再看（符號）、再流暢……";if(!("q6c" in st.ans)){st.ans.q6c=0;save();}}});
+    else{$("stepfb").className="fb no";$("stepfb").textContent="順序不對：想想看，先聽（聲音）、再看（符號）、再流暢……";rec("q6c",false);}});
   $("stepRst").addEventListener("click",function(){next=0;$("stepGot").textContent="";$("stepfb").textContent="";[].forEach.call($("stepPool").children,function(c){c.classList.remove("good");});});
 })();
 (function(){
@@ -480,8 +562,8 @@ $("sayGreet").addEventListener("click",function(){say("in case I don't see you i
   L.addEventListener("click",function(e){var c=e.target.closest(".chip");if(!c||c.classList.contains("good"))return;[].forEach.call(L.children,function(x){x.classList.remove("sel");});c.classList.add("sel");selL=c;});
   R.addEventListener("click",function(e){var c=e.target.closest(".chip");if(!c||!selL||c.classList.contains("good"))return;
     if(c.getAttribute("data-i")===selL.getAttribute("data-i")){c.className="chip good";selL.className="chip good";done[c.getAttribute("data-i")]=1;selL=null;
-      if(Object.keys(done).length===6){$("nfb").className="fb ok";$("nfb").textContent="✅ 全部配對成功！（以上皆為演講中的說法）";st.ans.q6e=1;save();refresh();}}
-    else{$("nfb").className="fb no";$("nfb").textContent="不太對，再試一次。";if(!("q6e" in st.ans)){st.ans.q6e=0;save();}}});
+      if(Object.keys(done).length===6){$("nfb").className="fb ok";$("nfb").textContent="✅ 全部配對成功！（以上皆為演講中的說法）";rec("q6e",true);}}
+    else{$("nfb").className="fb no";$("nfb").textContent="不太對，再試一次。";rec("q6e",false);}});
 })();
 multi("multi6","mb6","mfb6",[["先把 SoR 帶進地方政府",true],["再把 SoR 帶進中央政府",true],["任務完成後，就地解散",true],["永遠留在政壇、擴大黨務",false]],"q6g","✅ 先地方、再中央、任務完成後就地解散！");
 $("ref3").value=st.ref3||"";
@@ -492,6 +574,71 @@ document.querySelectorAll("main section").forEach(function(sec){var grp=[];
   [].slice.call(sec.children).forEach(function(k){if(k.tagName==="FIGURE")grp.push(k);else flush();});flush();});
 document.querySelectorAll("figcaption").forEach(function(c){c.textContent="🔍 "+c.textContent.replace(/^🔍 點圖放大｜/,"");});
 })();
+
+var QMETA={q0:[0,"開場暖身：參選的唯一目的"],q1a:[1,"口號配對"],q1b:[1,"26 年填空"],q1c:[1,"免費授權專利數"],q1d:[1,"麻將裡的關鍵卡張"],q1e:[1,"「當」市長還是「幫」市長"],
+q2a:[2,"游泳比喻"],tf0:[2,"是非 1：英文沉浸"],tf1:[2,"是非 2：26 年"],tf2:[2,"是非 3：PA 要看字母嗎"],q2b:[2,"認知超載名詞解釋"],q2c:[2,"現行常見的做法"],q2d:[2,"認知超載的結果"],
+q3a:[3,"拿掉 /k/（PA 實作）"],q3b:[3,"PA／Phonics 歸類"],q3c:[3,"大腦演化順序"],q3d:[3,"樂譜比喻"],q3e:[3,"閉眼就能做的階段"],q3f:[3,"死背的後果"],q3g:[3,"第 3 步是什麼"],
+q4a:[4,"台灣盲點（複選）"],q4b:[4,"外語學習者也適用"],q4c:[4,"哪五個國家"],q4d:[4,"幾州立法"],q4e:[4,"診斷矩陣的 SoR 正解"],
+q5a:[5,"114,000／68 填空"],q5b:[5,"檔案櫃比喻"],q5c:[5,"Johnson 引用來源（複選）"],q5d:[5,"兩尊公仔"],q5e:[5,"自動化之後"],
+q6a:[6,"英文開場"],q6b:[6,"立法時間線"],q6c:[6,"六步驟排序"],q6d:[6,"一樓與二樓"],q6e:[6,"數字配對"],q6f:[6,"SoR 的三句話"],q6g:[6,"無法黨要做什麼（複選）"],q6h:[6,"PA 與 44 個注音"],q6i:[6,"SoR 法案第二個重點"],q6j:[6,"美國為什麼痛定思痛"]};
+var QORDER=Object.keys(QMETA);
+if(!st.rec)st.rec={};if(!st.log)st.log=[];
+function rec(k,ok){var now=Date.now(),r=st.rec[k];
+  if(!r){r=st.rec[k]={f:(k in st.ans)?(st.ans[k]===1?1:0):(ok?1:0),n:0,s:0,t:now};st.ans[k]=r.f;}
+  r.n++;r.l=now;if(ok)r.s=1;st.log.push([k,ok?1:0,now]);if(st.log.length>500)st.log.shift();save();refresh();}
+EXP.q1d="他把自己定位成讓整副牌「聽牌」的關鍵卡張——「3 號 5 號聽 4 號」。";
+EXP.q1e="是「幫」市長：幫忙成為率先提出 SoR 英文教改的政治領袖（演講者的說法）。";
+EXP.q2c="節目提到的做法：用英文教音樂、體育、美勞，以為泡在英文裡就會自動吸收。";
+EXP.q2d="孩子既學不到專業知識，也學不會英文，對三門學科都產生挫折。";
+EXP.q3e="PA 純粹是聲音的處理，完全不需要看到字母，閉著眼睛就能做。";
+EXP.q3f="沒有聲音的掛鉤，大腦只能把每個單字當成「無意義的圖畫」死背，難怪背了就忘。";
+EXP.q3g="順序是 PA → Phonics → Fluency → Vocabulary and grammar → Comprehension → Writing。";
+EXP.q4c="美國、加拿大、英國、澳洲、法國，這五國的現行語文政策都基於 SoR（節目的說法）。";
+EXP.q4d="美國今年有 44 個州為 SoR 立法（節目與演講的說法）。";
+EXP.q4e="SoR 正解：階段 1 扎實建立 PA，階段 2 才進入 Phonics。";
+EXP.q5d="Andy Go 指著 Go（68 種用法），Muffin Man 指著 Vote。";
+EXP.q5e="PA 與 Phonics 自動化後，大腦資源釋放出來，進入流暢度、詞彙擴充與閱讀理解。";
+EXP.q6i="第二個重點：6 個步驟適用任何有大腦的小孩，也包含 ESL 移民孩子。";
+EXP.q6j="演講說：美國發現太多孩子是功能性文盲，連母語都學不好，所以痛定思痛找到 SoR。";
+function pad(n){return ("0"+n).slice(-2);}
+function fmt(ts){var d=new Date(ts);return (d.getMonth()+1)+"/"+d.getDate()+" "+pad(d.getHours())+":"+pad(d.getMinutes());}
+function rowOf(k,i){var r=st.rec[k],a=st.ans[k],m=QMETA[k];
+  return {no:i+1,st:NAMES[m[0]],ti:m[1],first:r?(r.f?"✅":"❌"):((k in st.ans)?(a===1?"✅":"❌"):"—"),n:r?r.n:((k in st.ans)?1:0),
+    status:r?(r.s?"已答對":"尚未答對"):((k in st.ans)?"已作答":"未作答"),time:r?fmt(r.l):""};}
+function sum(){var ans=0,fst=0,tries=0;QORDER.forEach(function(k){var r=st.rec[k];if(r){ans++;tries+=r.n;}else if(k in st.ans){ans++;tries++;}if(st.ans[k]===1)fst++;});return {ans:ans,fst:fst,tries:tries,tot:QORDER.length};}
+function renderRec(){
+  var s=sum();
+  $("recStat").innerHTML='<div><b>'+s.ans+' / '+s.tot+'</b>已作答</div><div><b>'+s.fst+'</b>首答正確</div><div><b>'+(s.ans?Math.round(s.fst/s.ans*100)+"%":"—")+'</b>首答正確率</div><div><b>'+s.tries+'</b>總作答次數</div>';
+  var h="";for(var i=0;i<7;i++){var ks=QORDER.filter(function(k){return QMETA[k][0]===i;}),an=0,f=0;ks.forEach(function(k){if(k in st.ans)an++;if(st.ans[k]===1)f++;});
+    h+='<div class="rbar"><span class="n">'+NAMES[i]+'</span><span class="tr"><i style="width:'+(an/ks.length*100)+'%"></i></span><span class="v">'+f+'／'+an+'／'+ks.length+'</span></div>';}
+  $("recStations").innerHTML=h+'<div style="font-size:13px;color:var(--sub)">數字：首答正確／已作答／該關題數</div>';
+  var tb='<tr><th>#</th><th>關卡</th><th>題目</th><th>首答</th><th>次數</th><th>狀態</th><th>最後作答</th></tr>';
+  QORDER.forEach(function(k,i){var r=rowOf(k,i);tb+='<tr><td>'+r.no+'</td><td>'+r.st+'</td><td class="tt">'+r.ti+'</td><td>'+r.first+'</td><td>'+(r.n||"—")+'</td><td>'+r.status+'</td><td>'+(r.time||"")+'</td></tr>';});
+  $("recTable").innerHTML=tb;
+  var lg=st.log.slice(-30).reverse().map(function(e){return '<div class="lgrow">'+fmt(e[2])+'　'+(e[1]?"✅":"❌")+'　'+QMETA[e[0]][1]+'</div>';}).join("");
+  $("recLog").innerHTML=lg||'<div style="color:var(--sub)">還沒有作答記錄。</div>';
+}
+function recText(){var s=sum(),L=["當選舉成為一場大腦科學的行為藝術｜答題記錄"];
+  if(st.name)L.push("學習者："+st.name);L.push("匯出時間："+fmt(Date.now()));
+  L.push("已作答 "+s.ans+"/"+s.tot+"，首答正確 "+s.fst+"，首答正確率 "+(s.ans?Math.round(s.fst/s.ans*100):0)+"%，總作答次數 "+s.tries,"");
+  QORDER.forEach(function(k,i){var r=rowOf(k,i);L.push(r.no+". ["+r.st+"] "+r.ti+"：首答"+r.first+"，"+(r.n||0)+" 次，"+r.status+(r.time?"（"+r.time+"）":""));});
+  return L.join("\n");}
+function recCsv(){function q(x){return '"'+String(x).replace(/"/g,'""')+'"';}
+  var L=[["學習者","編號","關卡","題目","首答","作答次數","狀態","最後作答"].map(q).join(",")];
+  QORDER.forEach(function(k,i){var r=rowOf(k,i);L.push([st.name||"",r.no,r.st,r.ti,r.first,r.n||0,r.status,r.time].map(q).join(","));});
+  return "﻿"+L.join("\r\n");}
+function msg(t,ok){$("recMsg").className="fb "+(ok?"ok":"no");$("recMsg").textContent=t;}
+$("who").value=st.name||"";
+$("who").addEventListener("input",function(){st.name=$("who").value;save();});
+$("recCopy").addEventListener("click",function(){var tx=recText();
+  function fb(){var ta=document.createElement("textarea");ta.value=tx;document.body.appendChild(ta);ta.select();try{document.execCommand("copy");msg("已複製記錄 ✓",true);}catch(e){msg("無法自動複製，請改用下載 CSV。",false);}document.body.removeChild(ta);}
+  try{if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(tx).then(function(){msg("已複製記錄 ✓",true);},fb);}else fb();}catch(e){fb();}});
+$("recCsv").addEventListener("click",function(){try{var b=new Blob([recCsv()],{type:"text/csv;charset=utf-8"}),a=document.createElement("a");a.href=URL.createObjectURL(b);a.download="SoR-answer-record.csv";document.body.appendChild(a);a.click();document.body.removeChild(a);msg("已下載 CSV ✓",true);}catch(e){msg("下載失敗，請改用複製記錄。",false);}});
+var clrT=null;
+$("recClr").addEventListener("click",function(){
+  if(!clrT){$("recClr").textContent="再按一次確認清除";clrT=setTimeout(function(){clrT=null;$("recClr").textContent="🗑️ 清除答題記錄";},4000);return;}
+  clearTimeout(clrT);clrT=null;st.ans={};st.rec={};st.log=[];st.done={};save();try{location.reload();}catch(e){refresh();}});
+document.addEventListener("keydown",function(e){var t=e.target;if((e.key==="Enter"||e.key===" ")&&t.classList&&t.classList.contains("lk")){t.click();}});
 var bo=$("boot");if(bo)bo.style.display="none";
 refresh();
 })();
