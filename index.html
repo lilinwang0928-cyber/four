@@ -152,7 +152,7 @@ footer{background:linear-gradient(135deg,#251a13,#3b2a1e)}
   <h1>當選舉成為一場大腦科學的行為藝術</h1>
   <p>從「4 號助選人」的麻將隱喻，走進 Science of Reading 的大腦地圖</p>
   <div class="progress" style="max-width:420px;margin:14px auto 0"><i id="bar"></i></div>
-  <div style="font-size:14px;margin-top:4px">已完成 <span id="pc">0</span> / 7 關　答對 <span id="score">0</span> / <span id="tot">40</span> 題<button class="hbtn" data-target="8" type="button">📊 答題記錄</button></div>
+  <div style="font-size:14px;margin-top:4px">已完成 <span id="pc">0</span> / 7 關　答對 <span id="score">0</span> / <span id="tot">40</span> 題<button class="hbtn" data-target="9" type="button">📊 答題記錄</button></div>
 </header>
 <nav id="nav"></nav>
 <div id="lb"><img alt=""></div>
@@ -410,7 +410,7 @@ footer{background:linear-gradient(135deg,#251a13,#3b2a1e)}
     <div class="row"><button class="btn" id="saveRef3">儲存</button><span id="ref3st" class="fb"></span></div>
   </div>
   <figure class="slide"><img decoding="async" src="img/sl_slogan.jpg" alt="臺灣 SoR 無法黨：讓小孩天天睡飽；讓小孩自信微笑；讓小孩母語超好。" loading="lazy"><figcaption>🔍 點圖放大｜臺灣 SoR 無法黨：讓小孩天天睡飽；讓小孩自信微笑；讓小孩母語超好。</figcaption></figure>
-  <div class="card cert hide" id="cert"><h3>🎓 通關！</h3><p>你完成了 7 關，答對 <b id="cs">0</b> / 40 題（<span class="lk" data-target="8" role="button" tabindex="0">查看答題記錄</span>）。<br>記住：學不好，不是你不夠努力，而是順序要先對。</p></div>
+  <div class="card cert hide" id="cert"><h3>🎓 通關！</h3><p>你完成了 7 關，答對 <b id="cs">0</b> / 40 題（<span class="lk" data-target="9" role="button" tabindex="0">查看答題記錄</span>）。<br>記住：學不好，不是你不夠努力，而是順序要先對。</p></div>
   <div class="card"><h3>📖 延伸閱讀</h3><p style="margin:0"><a href="https://lilinwang0928-cyber.github.io/bridge/" target="_blank" rel="noopener">打破600年的英文Bug：一場結合腦科學與社會實驗的教育革命 ↗</a></p></div>
   <div class="pager"><button class="btn alt" data-target="5">← 上一關</button><span style="display:flex;gap:10px;flex-wrap:wrap;justify-content:flex-end"><button class="btn" id="finish">完成學習單 ✓</button><button class="btn alt" data-target="7">下一關：SoR 自學王 →</button></span></div>
 </section>
@@ -450,11 +450,20 @@ footer{background:linear-gradient(135deg,#251a13,#3b2a1e)}
     <textarea id="ref4" placeholder="寫下你的想法……"></textarea>
     <div class="row"><button class="btn" id="saveRef4" type="button">儲存</button><span id="ref4st" class="fb"></span></div>
   </div>
-  <div class="pager"><button class="btn alt" data-target="6">← 第 6 關</button><button class="btn" data-target="8">📊 查看答題記錄 →</button></div>
+  <div class="pager"><button class="btn alt" data-target="6">← 第 6 關</button><button class="btn" data-target="8">下一關：網路發酵中 →</button></div>
 </section>
 
 <!-- 8 -->
+
+<!-- 8 -->
 <section id="s8">
+  <h2>🔥 第 8 關：網路發酵中</h2>
+  <p class="lead">這場 SoR 政見發表，正在網路上持續發酵。</p>
+  <div class="card"><h3>🎬 網路發酵中</h3><div class="video"><iframe src="https://www.youtube.com/embed/oPT03G_k-4M" title="網路發酵中" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div><p style="font-size:14px;margin:10px 0 0"><a href="https://youtu.be/oPT03G_k-4M?si=9MU0BZVH4F2lgMA5" target="_blank" rel="noopener">影片無法播放？在 YouTube 開啟 ↗</a></p></div>
+  <div class="pager"><button class="btn alt" data-target="7">← 第 7 關</button><button class="btn" data-target="9">📊 查看答題記錄 →</button></div>
+</section>
+
+<section id="s9">
   <h2>📊 答題記錄</h2>
   <p class="lead">記錄每一題的作答：首答是否正確、作答次數與時間。資料只存在這台裝置的瀏覽器裡。</p>
   <div class="card"><h3>學習者</h3><input type="text" id="who" placeholder="輸入姓名或座號（選填，會寫進匯出的記錄）"></div>
@@ -478,7 +487,7 @@ footer{background:linear-gradient(135deg,#251a13,#3b2a1e)}
 
 <script>
 (function(){
-var NAMES=["0 看影片","1 麻將","2 認知超載","3 PA/Phonics","4 國際","5 字典","6 政見發表","7 SoR 自學王","📊 答題記錄"];
+var NAMES=["0 看影片","1 麻將","2 認知超載","3 PA/Phonics","4 國際","5 字典","6 政見發表","7 SoR 自學王","8 網路發酵中","📊 答題記錄"];
 var KEY="sor_election_ws_v1";
 var st={done:{},ans:{},ref:"",ref2:"",rec:{},log:[],name:""};
 try{var raw=localStorage.getItem(KEY);if(raw)st=Object.assign(st,JSON.parse(raw));}catch(e){}
@@ -488,7 +497,7 @@ function $(id){return document.getElementById(id);}
 function score(){var n=0;QORDER.forEach(function(k){if(st.ans[k]===1)n++;});return n;}
 function refresh(){
   var d=0;for(var k in st.done)if(st.done[k])d++;
-  $("pc").textContent=Math.min(d,7);$("score").textContent=score();if(cur===8)renderRec();$("bar").style.width=(Math.min(d,7)/7*100)+"%";
+  $("pc").textContent=Math.min(d,7);$("score").textContent=score();if(cur===9)renderRec();$("bar").style.width=(Math.min(d,7)/7*100)+"%";
   var bs=$("nav").children;for(var i=0;i<bs.length;i++){bs[i].className=(i===cur?"on ":"")+(st.done[i]?"done":"");}
 }
 function go(n){
@@ -498,7 +507,7 @@ function go(n){
 }
 NAMES.forEach(function(t,i){var b=document.createElement("button");b.textContent=t;b.setAttribute("data-target",i);$("nav").appendChild(b);});
 document.addEventListener("click",function(e){
-  var t=e.target.closest("[data-target]");if(t){var n=parseInt(t.getAttribute("data-target"),10);if(!isNaN(n)){if(n>cur&&n<=7)st.done[cur]=true;save();go(n);}}
+  var t=e.target.closest("[data-target]");if(t){var n=parseInt(t.getAttribute("data-target"),10);if(!isNaN(n)){if(n>cur&&n<=8)st.done[cur]=true;save();go(n);}}
 });
 /* generic single choice */
 var EXP={
