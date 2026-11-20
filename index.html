@@ -76,7 +76,7 @@ footer a:hover{background:#e0453f}
 .speech hr{border:0;border-top:1px dashed var(--line);margin:14px 0}
 #yt button{position:absolute;inset:0;width:100%;border:0;background:linear-gradient(135deg,#3b2a1e,#7a5233);color:#fff;font-size:56px;cursor:pointer;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px}#yt small{font-size:15px}
 #boot{position:fixed;inset:0;z-index:200;background:#faf7f0;display:flex;align-items:center;justify-content:center;color:#6b5d52;font-size:18px}
-@media(min-width:760px){nav{justify-content:center}}
+@media(min-width:760px){nav>button:first-child{margin-left:auto}nav>button:last-child{margin-right:auto}}
 .slide img{cursor:zoom-in}
 #lb{position:fixed;inset:0;background:#000d;display:none;align-items:center;justify-content:center;z-index:99;padding:12px;cursor:zoom-out}#lb img{max-width:100%;max-height:100%;border-radius:8px}
 
@@ -144,6 +144,7 @@ footer{background:linear-gradient(135deg,#251a13,#3b2a1e)}
 .bookinfo dt{color:var(--navy);font-weight:700}.bookinfo dd{margin:0}
 .applepod{width:100%;max-width:100%;border:0;border-radius:12px;overflow:hidden;background:transparent}
 @media(max-width:560px){.bookhero{grid-template-columns:1fr}.bookcover{max-width:240px;margin:0 auto;display:block}}
+.subh{margin:26px 0 4px;color:var(--navy);font-size:19px}
 </style>
 </head>
 <body>
@@ -153,7 +154,7 @@ footer{background:linear-gradient(135deg,#251a13,#3b2a1e)}
   <h1>當選舉成為一場大腦科學的行為藝術</h1>
   <p>從「4 號助選人」的麻將隱喻，走進 Science of Reading 的大腦地圖</p>
   <div class="progress" style="max-width:420px;margin:14px auto 0"><i id="bar"></i></div>
-  <div style="font-size:14px;margin-top:4px">已完成 <span id="pc">0</span> / 7 關　答對 <span id="score">0</span> / <span id="tot">40</span> 題<button class="hbtn" data-target="10" type="button">📊 答題記錄</button></div>
+  <div style="font-size:14px;margin-top:4px">已完成 <span id="pc">0</span> / 7 關　答對 <span id="score">0</span> / <span id="tot">40</span> 題<button class="hbtn" data-target="11" type="button">📊 答題記錄</button></div>
 </header>
 <nav id="nav"></nav>
 <div id="lb"><img alt=""></div>
@@ -415,7 +416,7 @@ footer{background:linear-gradient(135deg,#251a13,#3b2a1e)}
     <div class="row"><button class="btn" id="saveRef3">儲存</button><span id="ref3st" class="fb"></span></div>
   </div>
   <figure class="slide"><img decoding="async" src="img/sl_slogan.jpg" alt="臺灣 SoR 無法黨：讓小孩天天睡飽；讓小孩自信微笑；讓小孩母語超好。" loading="lazy"><figcaption>🔍 點圖放大｜臺灣 SoR 無法黨：讓小孩天天睡飽；讓小孩自信微笑；讓小孩母語超好。</figcaption></figure>
-  <div class="card cert hide" id="cert"><h3>🎓 通關！</h3><p>你完成了 7 關，答對 <b id="cs">0</b> / 40 題（<span class="lk" data-target="10" role="button" tabindex="0">查看答題記錄</span>）。<br>記住：學不好，不是你不夠努力，而是順序要先對。</p></div>
+  <div class="card cert hide" id="cert"><h3>🎓 通關！</h3><p>你完成了 7 關，答對 <b id="cs">0</b> / 40 題（<span class="lk" data-target="11" role="button" tabindex="0">查看答題記錄</span>）。<br>記住：學不好，不是你不夠努力，而是順序要先對。</p></div>
   <div class="card"><h3>📖 延伸閱讀</h3><p style="margin:0"><a href="https://lilinwang0928-cyber.github.io/bridge/" target="_blank" rel="noopener">打破600年的英文Bug：一場結合腦科學與社會實驗的教育革命 ↗</a></p></div>
   <div class="card"><h3>👍 蕭博士臉書</h3><p style="margin:0 0 10px">想追蹤政見、SoR 與最新動態，歡迎前往蕭博士的臉書。</p><div class="row"><a class="btn" href="https://www.facebook.com/share/19mPq87dJG/?mibextid=wwXIfr" target="_blank" rel="noopener" style="text-decoration:none">前往蕭博士臉書 ↗</a></div></div>
   <div class="pager"><button class="btn alt" data-target="5">← 上一關</button><span style="display:flex;gap:10px;flex-wrap:wrap;justify-content:flex-end"><button class="btn" id="finish">完成學習單 ✓</button><button class="btn alt" data-target="7">下一關：SoR 自學王 →</button></span></div>
@@ -487,10 +488,42 @@ footer{background:linear-gradient(135deg,#251a13,#3b2a1e)}
   <div class="card"><h3>🎬 注音歌｜用唱的學會 66 個中英雙語聲音</h3><div class="video"><iframe src="https://www.youtube.com/embed/ycQ6-Xbz93M" title="注音歌｜用唱的學會 66 個中英雙語聲音" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div><p style="font-size:14px;margin:10px 0 0"><a href="https://youtu.be/ycQ6-Xbz93M?si=q_-RGa8HUOaDkYJT" target="_blank" rel="noopener">影片無法播放？在 YouTube 開啟 ↗</a></p></div>
   <div class="card"><h3>🎬 免費學美語 44 音</h3><div class="video"><iframe src="https://www.youtube.com/embed/PG57XGWvy4g" title="免費學美語 44 音" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div><p style="font-size:14px;margin:10px 0 0"><a href="https://youtu.be/PG57XGWvy4g?si=gldk_O08vHrxQBwc" target="_blank" rel="noopener">影片無法播放？在 YouTube 開啟 ↗</a></p></div>
   <div class="card"><h3>🔗 臺灣雙母語研究協會</h3><p style="margin:0 0 10px">想深入了解 SoR 專利注音與 44 音教學，歡迎前往臺灣雙母語研究協會官網。</p><div class="row"><a class="btn" href="https://milinguall.org/" target="_blank" rel="noopener" style="text-decoration:none">前往臺灣雙母語研究協會 ↗</a></div></div>
-  <div class="pager"><button class="btn alt" data-target="8">← 第 8 關</button><button class="btn" data-target="10">📊 查看答題記錄 →</button></div>
+  <div class="pager"><button class="btn alt" data-target="8">← 第 8 關</button><button class="btn" data-target="10">下一關：蕭博士與蕭爸爸 →</button></div>
 </section>
 
+
+<!-- 10 -->
 <section id="s10">
+  <h2>👨‍👦 第 10 關：蕭博士與蕭爸爸</h2>
+  <p class="lead">臺南 1 號蕭燐洪、臺北 4 號蕭文乾——一對父子，一南一北，同一個 SoR 心願。</p>
+  <figure class="slide"><img decoding="async" src="img/xiao01.jpg" alt="Tai 1, just 1, the chosen 1｜4 you, 4 me, 4 mosa." loading="lazy"><figcaption>Tai 1, just 1, the chosen 1｜4 you, 4 me, 4 mosa.</figcaption></figure>
+  <h3 class="subh">🤝 父子同框</h3>
+  <figure class="slide"><img decoding="async" src="img/xiao02.jpg" alt="講台前，4 you, 4 me, 4 mosa." loading="lazy"><figcaption>講台前，4 you, 4 me, 4 mosa.</figcaption></figure>
+  <figure class="slide"><img decoding="async" src="img/xiao04.jpg" alt="幫爸爸戴好帽子" loading="lazy"><figcaption>幫爸爸戴好帽子</figcaption></figure>
+  <figure class="slide"><img decoding="async" src="img/xiao03.jpg" alt="一起泡茶" loading="lazy"><figcaption>一起泡茶</figcaption></figure>
+  <figure class="slide"><img decoding="async" src="img/xiao05.jpg" alt="與一排 SoR 公仔合影" loading="lazy"><figcaption>與一排 SoR 公仔合影</figcaption></figure>
+  <h3 class="subh">📮 公報與 2028</h3>
+  <figure class="slide"><img decoding="async" src="img/xiao06.jpg" alt="2028 SoR 寫進 118 課綱：Hsiao we?" loading="lazy"><figcaption>2028 SoR 寫進 118 課綱：Hsiao we?</figcaption></figure>
+  <figure class="slide"><img decoding="async" src="img/xiao07.jpg" alt="臺南市、臺北市市長選舉公報" loading="lazy"><figcaption>臺南市、臺北市市長選舉公報</figcaption></figure>
+  <figure class="slide"><img decoding="async" src="img/xiao18.jpg" alt="2026 只是暖身，2028 正式委身" loading="lazy"><figcaption>2026 只是暖身，2028 正式委身</figcaption></figure>
+  <h3 class="subh">🌱 教育現場</h3>
+  <figure class="slide"><img decoding="async" src="img/xiao09.jpg" alt="抬頭愛仰望，彎腰信插秧" loading="lazy"><figcaption>抬頭愛仰望，彎腰信插秧</figcaption></figure>
+  <figure class="slide"><img decoding="async" src="img/xiao10.jpg" alt="雙母語概念講座" loading="lazy"><figcaption>雙母語概念講座</figcaption></figure>
+  <figure class="slide"><img decoding="async" src="img/xiao12.jpg" alt="課堂現場" loading="lazy"><figcaption>課堂現場</figcaption></figure>
+  <figure class="slide"><img decoding="async" src="img/xiao16.jpg" alt="台上鞠躬" loading="lazy"><figcaption>台上鞠躬</figcaption></figure>
+  <figure class="slide"><img decoding="async" src="img/xiao13.jpg" alt="陪孩子收鞋" loading="lazy"><figcaption>陪孩子收鞋</figcaption></figure>
+  <figure class="slide"><img decoding="async" src="img/xiao14.jpg" alt="坐在地上，陪孩子看注音符號表" loading="lazy"><figcaption>坐在地上，陪孩子看注音符號表</figcaption></figure>
+  <figure class="slide"><img decoding="async" src="img/xiao15.jpg" alt="掛起來的雙語注音符號表" loading="lazy"><figcaption>掛起來的雙語注音符號表</figcaption></figure>
+  <figure class="slide"><img decoding="async" src="img/xiao19.jpg" alt="Formosa 與注音" loading="lazy"><figcaption>Formosa 與注音</figcaption></figure>
+  <h3 class="subh">☕ 日常</h3>
+  <figure class="slide"><img decoding="async" src="img/xiao08.jpg" alt="蕭博士" loading="lazy"><figcaption>蕭博士</figcaption></figure>
+  <figure class="slide"><img decoding="async" src="img/xiao11.jpg" alt="蕭博士" loading="lazy"><figcaption>蕭博士</figcaption></figure>
+  <figure class="slide"><img decoding="async" src="img/xiao17.jpg" alt="臺北 101 前與 SoR 公仔" loading="lazy"><figcaption>臺北 101 前與 SoR 公仔</figcaption></figure>
+  <figure class="slide"><img decoding="async" src="img/xiao20.jpg" alt="工作中的蕭博士" loading="lazy"><figcaption>工作中的蕭博士</figcaption></figure>
+  <div class="pager"><button class="btn alt" data-target="9">← 第 9 關</button><button class="btn" data-target="11">📊 查看答題記錄 →</button></div>
+</section>
+
+<section id="s11">
   <h2>📊 答題記錄</h2>
   <p class="lead">記錄每一題的作答：首答是否正確、作答次數與時間。資料只存在這台裝置的瀏覽器裡。</p>
   <div class="card"><h3>學習者</h3><input type="text" id="who" placeholder="輸入姓名或座號（選填，會寫進匯出的記錄）"></div>
@@ -514,7 +547,7 @@ footer{background:linear-gradient(135deg,#251a13,#3b2a1e)}
 
 <script>
 (function(){
-var NAMES=["0 看影片","1 麻將","2 認知超載","3 PA/Phonics","4 國際","5 字典","6 政見發表","7 SoR 自學王","8 網路發酵中","9 SoR 專利注音","📊 答題記錄"];
+var NAMES=["0 看影片","1 麻將","2 認知超載","3 PA/Phonics","4 國際","5 字典","6 政見發表","7 SoR 自學王","8 網路發酵中","9 SoR 專利注音","10 蕭博士與蕭爸爸","📊 答題記錄"];
 var KEY="sor_election_ws_v1";
 var st={done:{},ans:{},ref:"",ref2:"",rec:{},log:[],name:""};
 try{var raw=localStorage.getItem(KEY);if(raw)st=Object.assign(st,JSON.parse(raw));}catch(e){}
@@ -524,7 +557,7 @@ function $(id){return document.getElementById(id);}
 function score(){var n=0;QORDER.forEach(function(k){if(st.ans[k]===1)n++;});return n;}
 function refresh(){
   var d=0;for(var k in st.done)if(st.done[k]&&+k<7)d++;
-  $("pc").textContent=Math.min(d,7);$("score").textContent=score();if(cur===10)renderRec();$("bar").style.width=(Math.min(d,7)/7*100)+"%";
+  $("pc").textContent=Math.min(d,7);$("score").textContent=score();if(cur===11)renderRec();$("bar").style.width=(Math.min(d,7)/7*100)+"%";
   var bs=$("nav").children;for(var i=0;i<bs.length;i++){bs[i].className=(i===cur?"on ":"")+(st.done[i]?"done":"");}
 }
 function go(n){
@@ -534,7 +567,7 @@ function go(n){
 }
 NAMES.forEach(function(t,i){var b=document.createElement("button");b.textContent=t;b.setAttribute("data-target",i);$("nav").appendChild(b);});
 document.addEventListener("click",function(e){
-  var t=e.target.closest("[data-target]");if(t){var n=parseInt(t.getAttribute("data-target"),10);if(!isNaN(n)){if(n>cur&&n<=9)st.done[cur]=true;save();go(n);}}
+  var t=e.target.closest("[data-target]");if(t){var n=parseInt(t.getAttribute("data-target"),10);if(!isNaN(n)){if(n>cur&&n<=10)st.done[cur]=true;save();go(n);}}
 });
 /* generic single choice */
 var EXP={
